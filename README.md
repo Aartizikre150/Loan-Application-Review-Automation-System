@@ -1,122 +1,80 @@
 # 🏦 Loan Application & Review Automation System
 
+<p align="center">
+  <img src="Images/ChatGPT%20Image%20Mar%202%2C%202026%2C%2009_36_29%20AM.png" alt="Loan Application Automation Banner" width="100%">
+</p>
+
+---
+
+## 🌐 Overview
+
 An end-to-end digital loan processing solution built using Microsoft Power Platform to streamline submission, approval workflows, status tracking, and stakeholder communication.
 
+This system transforms a traditionally manual, email-driven process into a structured, automated, and auditable workflow.
+
 ---
 
-## 🌐 Business Problem
+## 🧠 Business Problem
 
-Traditional loan processing is manual, fragmented, and email-driven.  
-This leads to:
+Traditional loan processing often results in:
 
 - Delayed approvals  
-- Poor status visibility  
-- Lack of audit trail  
+- Poor visibility into application status  
+- Lack of audit traceability  
 - Manual document validation  
-- Inconsistent stakeholder communication  
+- Fragmented stakeholder communication  
 
-This project transforms that process into a fully automated, trackable digital workflow.
+This solution digitizes and automates the full lifecycle.
 
 ---
 
-## 🧠 Solution Overview
+## 🏗️ Solution Architecture
 
 The system consists of:
 
-### 👤 1. Public Loan Submission App (Canvas App)
-- Customer-facing loan submission form  
-- Auto-generated unique Loan ID  
-- PDF-only document validation  
-- Default application status setting  
-- Clean, structured UI  
+### 👤 Public Loan Submission (Canvas App)
+- Structured loan form
+- Auto-generated unique Loan ID
+- PDF-only validation
+- Default status assignment
+- Clean user experience
 
-### 🏢 2. Internal Review App (Model-Driven / Admin Interface)
-- Review pending applications  
-- Update loan status  
-- Track applicant history  
-- Maintain structured approval process  
+### 🏢 Internal Review Interface (Model-Driven App)
+- Application review queue
+- Controlled status transitions
+- Applicant history tracking
+- Admin filtering capabilities
 
-### 🔄 3. Automation Layer (Power Automate)
-- Status change email notifications  
-- Audit log generation  
-- Approval workflow triggers  
-- History tracking table updates  
+### 🔄 Automation Layer (Power Automate)
+- Status change email notifications
+- Audit log creation
+- Approval workflow triggers
+- LoanStatusHistory tracking
 
-### 🗄️ 4. Dataverse Data Model
-Core Tables:
-- LoanApplication  
-- LoanDocuments  
-- LoanStatusHistory  
-- Reference Data  
-
-Ensures data integrity, traceability, and relational structure.
+### 🗄️ Dataverse Data Model
+Core tables:
+- LoanApplication
+- LoanDocuments
+- LoanStatusHistory
+- Reference Data
 
 ---
 
-## 📊 Dashboard & Reporting
+## 📊 Dashboard & Monitoring
 
-- KPI Cards (Total Applications, Pending, Approved, Rejected)
-- Status distribution donut charts  
-- Trend visualizations  
-- Interactive filtering  
-- Executive-friendly layout  
-
-Designed for decision-makers and operational monitoring.
+- Total Applications KPI
+- Pending Review KPI
+- Approval vs Rejection distribution
+- Application trend visualization
+- Interactive filtering
 
 ---
 
-## 🛠️ Technologies Used
+## 📦 Repository Contents
 
-| Category | Tools |
-|-----------|--------|
-| Frontend | Power Apps (Canvas + Model Driven) |
-| Backend | Microsoft Dataverse |
-| Automation | Power Automate |
-| Data Modeling | Relational Dataverse Schema |
-| Visualization | Power BI / Embedded Dashboards |
-| Workflow Design | Structured Business Process Mapping |
-
----
-
-## 🚀 Key Features
-
-- Automated Loan ID generation  
-- Controlled status transitions  
-- Email-based applicant updates  
-- Full audit trail  
-- PDF document validation  
-- Real-time KPI tracking  
-- Scalable architecture  
-
----
-
-## 📈 Business Impact
-
-- Reduced manual processing time  
-- Improved transparency across stakeholders  
-- Centralized application tracking  
-- Structured approval governance  
-- Audit-ready system design  
-
----
-
-## 🔮 Future Enhancements
-
-- Role-based access control  
-- Credit risk scoring integration  
-- AI-powered document validation  
-- Predictive approval probability scoring  
-
----
-
-## 📌 Why This Project Matters
-
-This project demonstrates:
-
-- Enterprise system thinking  
-- Business process automation  
-- Low-code platform engineering  
-- Data-driven operational monitoring  
-- Scalable workflow architecture  
-
-It bridges technology and business operations.
+- Full Power Platform Solution Export
+- Canvas App source file (.msapp)
+- Power Automate flow exports
+- Architecture diagrams
+- Screenshots
+- Executive presentation deck
